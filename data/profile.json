@@ -1,0 +1,54 @@
+{
+  "name": "Sibiraj PR",
+  "title": "Founder @ Lightrains | Blockchain Developer | Open Source Enthusiast",
+  "tagline": "Thriving in the open-source world and building sustainable digital solutions.",
+  "image": "/profile.jpeg",
+  "about": "I'm a technology entrepreneur and founder of Lightrains Technolabs. I specialize in blockchain development and love working on open-source projects. My focus is on creating ethical, scalable, and accessible digital products that drive real value.",
+  "skills": [
+    "Blockchain Development (Solidity, Ethereum, Hyperledger)",
+    "Full-Stack Development (Next.js, Node.js)",
+    "Open Source Contribution",
+    "Product Architecture & Strategy",
+    "Decentralized Applications (DApps)",
+    "Artificial Intelligence (LLMs, AI Tools, Prompt Engineering)"
+  ],
+  "projects": [
+    {
+      "name": "Lightrains Technolabs",
+      "description": "Building decentralized solutions for businesses.",
+      "link": "https://lightrains.com"
+    },
+    {
+      "name": "GitHub Portfolio",
+      "description": "Contributions to blockchain libraries and developer tools.",
+      "link": "https://github.com/sibizulu"
+    }
+  ],
+  "interests": "I'm passionate about sustainability, clean design, and empowering developers. I enjoy writing, mentoring, and staying up to date with emerging technologies.",
+  "socials": [
+    {
+      "label": "LinkedIn",
+      "link": "https://www.linkedin.com/in/sibizulu/"
+    },
+    {
+      "label": "GitHub",
+      "link": "https://github.com/sibizulu"
+    },
+    {
+      "label": "Email",
+      "link": "mailto:sibizulu@gmail.com"
+    }
+  ],
+  "currentProjects": [
+    {
+      "name": "StoryBee",
+      "link": "https://storybee.app/",
+      "description": "An AI-powered story creation app that helps parents generate personalized bedtime stories with voice narration in their own voice."
+    },
+    {
+      "name": "FoundersAreHiring",
+      "link": "https://foundersarehiring.com/",
+      "description": "A platform connecting early-stage startup founders with passionate collaborators, job seekers, and freelancers."
+    }
+  ]
+}
