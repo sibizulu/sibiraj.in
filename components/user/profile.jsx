@@ -1,4 +1,5 @@
 import profileData from '@/data/profile.json'
+import Link from 'next/link'
 
 export default function Profile() {
   return (
@@ -21,6 +22,43 @@ export default function Profile() {
         </div>
 
         <div>
+          <h2 className="text-xl font-semibold mb-2">Personal Interests</h2>
+          <p className="text-gray-600">{profileData.interests}</p>
+        </div>
+
+        {profileData.currentProjects &&
+          profileData.currentProjects.length > 0 && (
+            <div>
+              <h2 className="text-xl font-semibold mb-4">Current Projects</h2>
+              <ul className="space-y-4 text-gray-700">
+                {profileData.currentProjects.map((project, index) => (
+                  <li key={index}>
+                    <h3 className="font-medium text-lg">
+                      {project.localLink ? (
+                        <Link
+                          href={project.localLink}
+                          className="text-blue-600 hover:underline">
+                          {project.name}
+                        </Link>
+                      ) : (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          className="text-blue-600 hover:underline">
+                          {project.name}
+                        </a>
+                      )}
+                    </h3>
+                    <p className="text-sm text-gray-600">
+                      {project.description}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+        <div>
           <h2 className="text-xl font-semibold mb-2">Skills & Expertise</h2>
           <ul className="list-disc list-inside text-gray-600">
             {profileData.skills.map((skill, index) => (
@@ -28,7 +66,9 @@ export default function Profile() {
             ))}
           </ul>
         </div>
+      </div>
 
+      <div className="mt-10 grid md:grid-cols-2 gap-6">
         <div>
           <h2 className="text-xl font-semibold mb-2">Notable Projects</h2>
           <ul className="list-disc list-inside text-gray-600">
@@ -45,38 +85,6 @@ export default function Profile() {
             ))}
           </ul>
         </div>
-
-        <div>
-          <h2 className="text-xl font-semibold mb-2">Personal Interests</h2>
-          <p className="text-gray-600">{profileData.interests}</p>
-        </div>
-      </div>
-
-      <div className="mt-10 grid md:grid-cols-2 gap-6">
-        {profileData.currentProjects &&
-          profileData.currentProjects.length > 0 && (
-            <div>
-              <h2 className="text-xl font-semibold mb-4">Current Projects</h2>
-              <ul className="space-y-4 text-gray-700">
-                {profileData.currentProjects.map((project, index) => (
-                  <li key={index}>
-                    <h3 className="font-medium text-lg">
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        className="text-blue-600 hover:underline">
-                        {project.name}
-                      </a>
-                    </h3>
-                    <p className="text-sm text-gray-600">
-                      {project.description}
-                    </p>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-
         <div>
           <h2 className="text-xl font-semibold mb-2">Connect With Me</h2>
           <ul className="space-y-2 text-blue-600">

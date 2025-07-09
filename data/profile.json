@@ -41,14 +41,15 @@
   ],
   "currentProjects": [
     {
+      "name": "FoundersAreHiring",
+      "link": "https://foundersarehiring.com/",
+      "localLink": "/founders-are-hiring",
+      "description": "A platform connecting early-stage startup founders with passionate collaborators, job seekers, and freelancers."
+    },
+    {
       "name": "StoryBee",
       "link": "https://storybee.app/",
       "description": "An AI-powered story creation app that helps parents generate personalized bedtime stories with voice narration in their own voice."
-    },
-    {
-      "name": "FoundersAreHiring",
-      "link": "https://foundersarehiring.com/",
-      "description": "A platform connecting early-stage startup founders with passionate collaborators, job seekers, and freelancers."
     }
   ]
 }
