@@ -42,7 +42,26 @@ export const metadata: Metadata = {
     title: 'Sibiraj PR – Full Stack Developer & AI Innovator',
     description: "Hi, I'm Sibiraj – building full stack apps and future tech.",
     images: ['https://sibiraj.in/profile.jpeg']
-  }
+  },
+  icons: [
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '32x32',
+      url: '/icons/favicon-32x32.png'
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      sizes: '16x16',
+      url: '/icons/favicon-16x16.png'
+    },
+    {
+      rel: 'apple-touch-icon',
+      sizes: '180x180',
+      url: '/icons/apple-touch-icon.png'
+    }
+  ]
 }
 
 export default function RootLayout({
