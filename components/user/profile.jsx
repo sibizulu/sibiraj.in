@@ -1,7 +1,15 @@
+import { Linkedin, Github, Mail, Twitter } from 'lucide-react' // Specific imports
 import profileData from '@/data/profile.json'
 import Link from 'next/link'
 
 export default function Profile() {
+  const icons = {
+    Linkedin,
+    Github,
+    Mail,
+    Twitter
+  }
+
   return (
     <section className="max-w-4xl mx-auto p-6 text-gray-800">
       <div className="text-center mb-10">
@@ -87,17 +95,25 @@ export default function Profile() {
         </div>
         <div>
           <h2 className="text-xl font-semibold mb-2">Connect With Me</h2>
-          <ul className="space-y-2 text-blue-600">
-            {profileData.socials.map((social, index) => (
-              <li key={index}>
-                <a
-                  href={social.link}
-                  target="_blank"
-                  className="hover:underline">
-                  {social.label}
-                </a>
-              </li>
-            ))}
+          <ul className="space-y-2">
+            {profileData.socials.map((social, index) => {
+              const IconComponent = icons[social.icon]
+              return (
+                <li
+                  key={index}
+                  className="flex items-center space-x-2">
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    className="flex items-center hover:underline space-x-2">
+                    {IconComponent && (
+                      <IconComponent className="w-5 h-5 text-gray-700" />
+                    )}
+                    <span className="text-blue-600">{social.label}</span>
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>

@@ -28,15 +28,23 @@
   "socials": [
     {
       "label": "LinkedIn",
-      "link": "https://www.linkedin.com/in/sibizulu/"
+      "link": "https://www.linkedin.com/in/sibizulu/",
+      "icon": "Linkedin"
     },
     {
       "label": "GitHub",
-      "link": "https://github.com/sibizulu"
+      "link": "https://github.com/sibizulu",
+      "icon": "Github"
     },
     {
       "label": "Email",
-      "link": "mailto:sibizulu@gmail.com"
+      "link": "mailto:sibizulu@gmail.com",
+      "icon": "Mail"
+    },
+    {
+      "label": "Twitter",
+      "link": "https://twitter.com/sibizulu",
+      "icon": "Twitter"
     }
   ],
   "currentProjects": [
