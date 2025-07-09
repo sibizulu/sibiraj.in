@@ -40,13 +40,13 @@ export default function FoundersAreHiring() {
 
       <article className="prose lg:prose-lg max-w-4xl mx-auto text-gray-800">
         <h2 className="text-2xl font-semibold mt-8 mb-4">
-          My Co-Founder Pulled Me Into This—and I'm Glad He Did
+          My Co-Founder Pulled Me Into This and I'm Glad He Did
         </h2>
 
         <p className="text-gray-600 mb-4">
           When Nik first told me about the idea behind FoundersAreHiring (FAH),
           I didn't jump in immediately. At the time, I was buried in backend
-          work—debugging infra issues, scaling systems, improving developer
+          work, debugging infra issues, scaling systems, improving developer
           tooling. Hiring felt like a necessary pain, not something I wanted to
           fix.
         </p>
@@ -57,7 +57,7 @@ export default function FoundersAreHiring() {
         </p>
 
         <p className="text-gray-600 mb-4">
-          Then it happened—I had to screen over a dozen resumes for a role we
+          Then it happened. I had to screen over a dozen resumes for a role we
           posted. All the resumes looked good. None of the candidates could
           explain what they actually did. That's when it hit me: hiring doesn't
           work the way we work.
@@ -69,7 +69,7 @@ export default function FoundersAreHiring() {
 
         <p className="text-gray-600 mb-4">
           I've spent most of my time building infrastructure and backend
-          systems. Crypto platforms, internal tools, financial services—you name
+          systems. Crypto platforms, internal tools, financial services you name
           it.
         </p>
 
@@ -94,7 +94,7 @@ export default function FoundersAreHiring() {
 
         <p className="text-gray-600 mb-4">
           He was ahead of me on this one. Nik had been dealing with the same
-          issues—but from a founder's seat.
+          issues, but from a founder's seat.
         </p>
 
         <p className="text-gray-600 mb-4">
@@ -109,7 +109,7 @@ export default function FoundersAreHiring() {
         </p>
 
         <h3 className="text-xl font-semibold mt-8 mb-3">
-          What We Built—and Why
+          What We Built and Why
         </h3>
 
         <ol className="list-decimal list-inside space-y-4 text-gray-600 mb-6 pl-2">
@@ -133,7 +133,7 @@ export default function FoundersAreHiring() {
             Focus on real-world fit
             <p className="ml-7 font-normal">
               Job posts and profiles highlight work style, ambiguity comfort,
-              equity logic—things that matter more than buzzwords.
+              equity logic things that matter more than buzzwords.
             </p>
           </li>
 
