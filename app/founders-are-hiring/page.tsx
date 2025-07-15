@@ -44,7 +44,7 @@ export default function FoundersAreHiring() {
         </h2>
 
         <p className="text-gray-600 mb-4">
-          When Nik first told me <a href="https://niksmac.me/blog/foundersarehiring-startup-hiring">about the idea</a> behind FoundersAreHiring (FAH),
+          When Nik first told me <a href="https://niksmac.me/blog/foundersarehiring-startup-hiring"  className="underline decoration-1 underline-offset-4 decoration-gray-700 font-medium">about the idea</a> behind FoundersAreHiring (FAH),
           I didn't jump in immediately. At the time, I was buried in backend
           work, debugging infra issues, scaling systems, improving developer
           tooling. Hiring felt like a necessary pain, not something I wanted to
