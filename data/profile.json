@@ -1,30 +1,30 @@
 {
   "name": "Sibiraj PR",
-  "title": "Founder @ Lightrains | Blockchain Developer | Open Source Enthusiast",
-  "tagline": "Thriving in the open-source world and building sustainable digital solutions.",
-  "image": "/profile.jpeg",
-  "about": "I'm a technology entrepreneur and founder of Lightrains Technolabs. I specialize in blockchain development and love working on open-source projects. My focus is on creating ethical, scalable, and accessible digital products that drive real value.",
+  "title": "AI Product Builder | Founder | Tech Strategist | Building AI Products | Exploring Seed Investment",
+  "tagline": "I turn AI ideas into products people use, and the strategy that keeps them moving.",
+  "image": "/profile-256.jpg",
+  "about": "I'm an AI product builder and founder of Lightrains Technolabs. I work across product, strategy, and engineering, with a background in blockchain and open-source development. Right now I'm focused on building AI-driven products and on the strategic choices that decide whether they succeed. I'm also exploring seed investment in early-stage companies.",
   "skills": [
-    "Blockchain Development (Solidity, Ethereum, Hyperledger)",
+    "AI Product Development (LLMs, AI Tools, Prompt Engineering)",
+    "Product Strategy & Technical Roadmapping",
     "Full-Stack Development (Next.js, Node.js)",
+    "Blockchain & Decentralized Applications (Solidity, Ethereum, Hyperledger)",
     "Open Source Contribution",
-    "Product Architecture & Strategy",
-    "Decentralized Applications (DApps)",
-    "Artificial Intelligence (LLMs, AI Tools, Prompt Engineering)"
+    "Early-Stage Founding & Execution"
   ],
   "projects": [
     {
       "name": "Lightrains Technolabs",
-      "description": "Building decentralized solutions for businesses.",
+      "description": "Founder-led company building decentralized solutions for businesses.",
       "link": "https://lightrains.com"
     },
     {
       "name": "GitHub Portfolio",
-      "description": "Contributions to blockchain libraries and developer tools.",
+      "description": "Open-source contributions to blockchain libraries and developer tools.",
       "link": "https://github.com/sibizulu"
     }
   ],
-  "interests": "I'm passionate about sustainability, clean design, and empowering developers. I enjoy writing, mentoring, and staying up to date with emerging technologies.",
+  "interests": "Outside of work I care about sustainability, clean design, and helping developers do their best work. I enjoy writing, mentoring, and following emerging technology, especially where AI meets real-world problems.",
   "socials": [
     {
       "label": "LinkedIn",
@@ -43,21 +43,31 @@
     },
     {
       "label": "Twitter",
-      "link": "https://twitter.com/sibizulu",
+      "link": "https://x.com/sibizulu",
       "icon": "Twitter"
     }
   ],
   "currentProjects": [
     {
-      "name": "FoundersAreHiring",
-      "link": "https://foundersarehiring.com/",
-      "localLink": "/founders-are-hiring",
-      "description": "A platform connecting early-stage startup founders with passionate collaborators, job seekers, and freelancers."
+      "name": "Merrin",
+      "link": "https://merrin.xyz",
+      "description": "A privacy-focused app that runs its core AI on your device, remembers what you talk about, and helps you spot patterns in your thinking over time."
+    },
+    {
+      "name": "HoldMyBill",
+      "link": "https://holdmybill.com",
+      "description": "A personal app that links receipts, warranties, and service history to each product you own, so you can find proof and catch deadlines before they cost you money."
     },
     {
       "name": "StoryBee",
       "link": "https://storybee.app/",
-      "description": "An AI-powered story creation app that helps parents generate personalized bedtime stories with voice narration in their own voice."
+      "description": "An AI product that generates personalized bedtime stories, with voice narration in a parent's own voice."
+    },
+    {
+      "name": "FoundersAreHiring",
+      "link": "https://foundersarehiring.com/",
+      "localLink": "/founders-are-hiring",
+      "description": "A hiring platform that connects early-stage founders directly with candidates, with curated weekly matches and no recruiter layer."
     }
   ]
 }

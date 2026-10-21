@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Manrope, Inter } from 'next/font/google'
+import { SITE_URL } from '@/lib/site'
 import './globals.css'
 
 const manrope = Manrope({
@@ -14,54 +15,39 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Sibiraj PR – Full Stack Developer & AI Innovator',
+    default: 'Sibiraj PR – AI Product Builder & Founder',
     template: '%s | Sibiraj PR'
   },
   description:
-    "Hi, I'm Sibiraj – a full stack developer building future-ready digital experiences and AI-driven products.",
-  metadataBase: new URL('https://sibiraj.in'),
+    "Hi, I'm Sibiraj – an AI product builder and founder. I turn AI ideas into products people use, and the strategy behind them.",
+  metadataBase: new URL(SITE_URL),
+  alternates: {
+    canonical: '/'
+  },
   openGraph: {
-    title: 'Sibiraj PR – Full Stack Developer & AI Innovator',
+    title: 'Sibiraj PR – AI Product Builder & Founder',
     description:
-      'Explore my projects, startups, and AI-driven tools. Tech meets creativity.',
-    url: 'https://sibiraj.in',
+      'Explore my AI products, startups, and ventures. Turning AI ideas into products people use.',
+    url: SITE_URL,
     siteName: 'Sibiraj PR',
     images: [
       {
-        url: 'https://sibiraj.in/profile.jpeg',
+        url: `${SITE_URL}/profile.jpeg`,
         width: 800,
         height: 800,
-        alt: 'Sibiraj PR – Full Stack Developer & AI Innovator'
+        alt: 'Sibiraj PR – AI Product Builder & Founder'
       }
     ],
     locale: 'en_US',
     type: 'website'
   },
   twitter: {
-    card: 'summary_large_image',
-    title: 'Sibiraj PR – Full Stack Developer & AI Innovator',
-    description: "Hi, I'm Sibiraj – building full stack apps and future tech.",
-    images: ['https://sibiraj.in/profile.jpeg']
-  },
-  icons: [
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '32x32',
-      url: '/icons/favicon-32x32.png'
-    },
-    {
-      rel: 'icon',
-      type: 'image/png',
-      sizes: '16x16',
-      url: '/icons/favicon-16x16.png'
-    },
-    {
-      rel: 'apple-touch-icon',
-      sizes: '180x180',
-      url: '/icons/apple-touch-icon.png'
-    }
-  ]
+    card: 'summary',
+    title: 'Sibiraj PR – AI Product Builder & Founder',
+    description:
+      "Hi, I'm Sibiraj – building AI products and turning ideas into strategy.",
+    images: [`${SITE_URL}/profile.jpeg`]
+  }
 }
 
 export default function RootLayout({
