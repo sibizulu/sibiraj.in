@@ -1,0 +1,16 @@
+---
+# Copy this file to content/blog/<your-post-slug>.md
+# The filename becomes the URL: /blog/<your-post-slug>
+title: 'A clear, searchable title (what someone would type into Google)'
+description: '150-160 characters. Shows in Google results and link previews.'
+date: 2026-11-10
+# updated: 2026-12-01   # optional, set when you significantly revise a post
+tags: [AI Security, LLM]  # reuse existing tags so tag pages grow
+draft: true              # drafts show in `npm run dev` only; remove to publish
+---
+
+Opening paragraph: answer the reader's question quickly.
+
+## First section
+
+Use ## and ### headings. They get anchor links automatically.

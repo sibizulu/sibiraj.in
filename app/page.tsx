@@ -10,6 +10,20 @@ export default function Home() {
     url: SITE_URL,
     image: `${SITE_URL}${profileData.image}`,
     description: profileData.tagline,
+    jobTitle: 'AI Product Builder & Founder',
+    knowsAbout: [
+      'Artificial Intelligence',
+      'Large Language Models',
+      'AI Security',
+      'Cybersecurity',
+      'Product Strategy',
+      'Blockchain'
+    ],
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Lightrains Technolabs',
+      url: 'https://lightrains.com'
+    },
     sameAs: profileData.socials
       .filter(social => !social.link.startsWith('mailto:'))
       .map(social => social.link)

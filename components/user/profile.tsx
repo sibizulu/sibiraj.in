@@ -1,7 +1,9 @@
 import { Linkedin, Github, Mail, Twitter, type LucideIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import PostList from '@/components/blog/post-list'
 import profileData from '@/data/profile.json'
+import { getAllPosts } from '@/lib/posts'
 
 const icons: Record<string, LucideIcon> = {
   Linkedin,
@@ -11,6 +13,8 @@ const icons: Record<string, LucideIcon> = {
 }
 
 export default function Profile() {
+  const latestPosts = getAllPosts().slice(0, 3)
+
   return (
     <main className="max-w-4xl mx-auto p-6 text-gray-800">
       <header className="text-center mb-10">
@@ -109,6 +113,20 @@ export default function Profile() {
           </ul>
         </div>
       </div>
+
+      {latestPosts.length > 0 && (
+        <section className="mt-12 border-t pt-8">
+          <div className="flex items-baseline justify-between mb-6">
+            <h2 className="text-xl font-semibold">Latest Writing</h2>
+            <Link
+              href="/blog"
+              className="text-sm text-blue-600 underline underline-offset-4">
+              All posts →
+            </Link>
+          </div>
+          <PostList posts={latestPosts} />
+        </section>
+      )}
     </main>
   )
 }

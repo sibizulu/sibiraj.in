@@ -1,3 +1,14 @@
 [build]
 command = "next build"
 publish = "out"
+
+# Next's static export writes OG images without a file extension
+[[headers]]
+  for = "/blog/*/opengraph-image"
+  [headers.values]
+    Content-Type = "image/png"
+
+[[headers]]
+  for = "/rss.xml"
+  [headers.values]
+    Content-Type = "application/rss+xml; charset=utf-8"

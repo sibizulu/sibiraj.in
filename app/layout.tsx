@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Manrope, Inter } from 'next/font/google'
+import SiteNav from '@/components/site-nav'
 import { SITE_URL } from '@/lib/site'
 import './globals.css'
 
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
     "Hi, I'm Sibiraj – an AI product builder and founder. I turn AI ideas into products people use, and the strategy behind them.",
   metadataBase: new URL(SITE_URL),
   alternates: {
-    canonical: '/'
+    canonical: '/',
+    types: { 'application/rss+xml': '/rss.xml' }
   },
   openGraph: {
     title: 'Sibiraj PR – AI Product Builder & Founder',
@@ -58,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${inter.variable} antialiased`}>
+        <SiteNav />
         {children}
       </body>
     </html>
