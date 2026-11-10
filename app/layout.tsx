@@ -1,17 +1,27 @@
 import type { Metadata } from 'next'
-import { Manrope, Inter } from 'next/font/google'
+import { Space_Grotesk, Inter, JetBrains_Mono } from 'next/font/google'
 import SiteNav from '@/components/site-nav'
 import { SITE_URL } from '@/lib/site'
 import './globals.css'
 
-const manrope = Manrope({
-  variable: '--font-manrope',
-  subsets: ['latin']
+const spaceGrotesk = Space_Grotesk({
+  variable: '--font-space-grotesk',
+  subsets: ['latin'],
+  weight: ['600', '700'],
+  display: 'swap'
 })
 
 const inter = Inter({
   variable: '--font-inter',
-  subsets: ['latin']
+  subsets: ['latin'],
+  display: 'swap'
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: '--font-jetbrains-mono',
+  subsets: ['latin'],
+  weight: ['400'],
+  display: 'swap'
 })
 
 export const metadata: Metadata = {
@@ -59,7 +69,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${inter.variable} antialiased`}>
+      <body className={`${spaceGrotesk.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
         <SiteNav />
         {children}
       </body>

@@ -82,7 +82,7 @@ export default async function BlogPost({ params }: Props) {
 
       <article>
         <header className="mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold leading-tight">
+          <h1 className="text-[2rem] md:text-[2.75rem] font-bold leading-[1.15]">
             {post.title}
           </h1>
           <p className="text-sm text-gray-500 mt-3">
@@ -111,7 +111,7 @@ export default async function BlogPost({ params }: Props) {
         </header>
 
         <div
-          className="prose prose-gray max-w-none prose-headings:font-manrope prose-a:text-blue-700 prose-headings:scroll-mt-6 prose-pre:overflow-x-auto"
+          className="article-body prose prose-gray max-w-none prose-headings:font-heading prose-a:text-blue-700 prose-headings:scroll-mt-6 prose-pre:overflow-x-auto"
           dangerouslySetInnerHTML={{ __html: post.html }}
         />
       </article>

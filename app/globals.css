@@ -7,8 +7,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-manrope: var(--font-manrope);
-  --font-inter: var(--font-inter);
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -79,7 +80,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground font-inter;
+    @apply bg-background text-foreground font-sans;
   }
   h1,
   h2,
@@ -87,11 +88,58 @@
   h4,
   h5,
   h6 {
-    @apply font-manrope;
+    @apply font-heading;
+    letter-spacing: -0.01em;
+  }
+  h1,
+  h2 {
+    letter-spacing: -0.02em;
   }
   :focus-visible {
     outline: 2px solid var(--color-blue-700);
     outline-offset: 2px;
     border-radius: 2px;
   }
+}
+
+/* Long-form article typography (unlayered so it overrides the prose plugin) */
+.article-body {
+  font-size: 1.0625rem; /* 17px */
+  line-height: 1.7;
+}
+@media (min-width: 768px) {
+  .article-body {
+    font-size: 1.125rem; /* 18px */
+  }
+}
+.article-body :where(h2) {
+  font-size: 1.625rem; /* 26px mobile */
+  font-weight: 600;
+  line-height: 1.25;
+}
+.article-body :where(h3) {
+  font-size: 1.25rem; /* 20px mobile */
+  font-weight: 600;
+  line-height: 1.35;
+}
+@media (min-width: 768px) {
+  .article-body :where(h2) {
+    font-size: 1.875rem; /* 30px */
+  }
+  .article-body :where(h3) {
+    font-size: 1.375rem; /* 22px */
+  }
+}
+.article-body :where(strong) {
+  font-weight: 600;
+}
+.article-body :where(pre) {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.6;
+}
+.article-body :where(pre code) {
+  font-size: inherit;
+}
+.article-body :where(:not(pre) > code) {
+  font-size: 0.9em;
 }

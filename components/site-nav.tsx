@@ -7,7 +7,7 @@ export default function SiteNav() {
       className="max-w-4xl mx-auto px-6 pt-6 flex items-center justify-between text-sm">
       <Link
         href="/"
-        className="font-manrope font-semibold text-gray-900">
+        className="font-heading font-semibold text-gray-900">
         Sibiraj PR
       </Link>
       <ul className="flex gap-5 text-gray-600">

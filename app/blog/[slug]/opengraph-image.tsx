@@ -1,3 +1,5 @@
+import fs from 'node:fs/promises'
+import path from 'node:path'
 import { ImageResponse } from 'next/og'
 import { getAllPosts } from '@/lib/posts'
 
@@ -20,6 +22,16 @@ export default async function Image({
   const title = post?.title ?? 'Sibiraj PR'
   const tags = post?.tags.slice(0, 3) ?? []
 
+  // Satori needs TTF/OTF/WOFF (not WOFF2), so load the fontsource WOFF files
+  const fontDir = path.join(
+    process.cwd(),
+    'node_modules/@fontsource/space-grotesk/files'
+  )
+  const [medium, bold] = await Promise.all([
+    fs.readFile(path.join(fontDir, 'space-grotesk-latin-500-normal.woff')),
+    fs.readFile(path.join(fontDir, 'space-grotesk-latin-700-normal.woff'))
+  ])
+
   return new ImageResponse(
     (
       <div
@@ -32,7 +44,7 @@ export default async function Image({
           padding: '72px',
           background: 'linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)',
           color: 'white',
-          fontFamily: 'sans-serif'
+          fontFamily: 'Space Grotesk'
         }}>
         <div style={{ display: 'flex', gap: 16 }}>
           {tags.map(tag => (
@@ -54,7 +66,7 @@ export default async function Image({
             fontSize: title.length > 60 ? 56 : 68,
             fontWeight: 700,
             lineHeight: 1.15,
-            letterSpacing: -1
+            letterSpacing: -1.5
           }}>
           {title}
         </div>
@@ -70,6 +82,12 @@ export default async function Image({
         </div>
       </div>
     ),
-    size
+    {
+      ...size,
+      fonts: [
+        { name: 'Space Grotesk', data: medium, weight: 500, style: 'normal' },
+        { name: 'Space Grotesk', data: bold, weight: 700, style: 'normal' }
+      ]
+    }
   )
 }
