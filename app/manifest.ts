@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: 'Sibiraj',
     start_url: '/',
     display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#1a1a1a',
+    background_color: '#000000',
+    theme_color: '#000000',
     description:
       'The personal website of Sibiraj PR — showcasing projects, ideas, and more.',
     icons: [
